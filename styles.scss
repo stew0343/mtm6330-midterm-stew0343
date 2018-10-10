@@ -1,0 +1,149 @@
+$mainBlue: #1622e8;
+$mainGreen: #9feed9;
+$mainGrey: #f2f2f2;
+$hiBlue: #1825ff;
+$loBlue: #0c137f;
+$darkBlue: #060940;
+$hiGreen: #aaffeb;
+$loGreen: #557f74;
+$darkGreen: #2b403a;
+$loGrey: #7f7f7f;
+$darkGrey: #292929;
+
+@font-face {
+    font-family: 'FixedSys';
+    src: url(fixedsys.ttf);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: "FixedSys", "Lucida Console", "Courier";
+    text-transform: uppercase;
+    font-size: 30pt;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 20pt;
+}
+
+h3 {
+    font-size: 14pt;
+}
+
+h4 {
+
+}
+
+p {
+    font-size: 12pt;
+}
+
+.mainPic,
+.splashPic {
+    width: 100%;
+}
+
+.container {
+    margin: 1rem;
+}
+
+.wrapper{
+    padding: 1rem;
+    max-height: 100%;
+}
+
+nav {
+    
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        
+        li {
+            list-style: none;
+            width:20%;
+
+            a {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+#countdown {
+    position: sticky;
+    bottom: 0;
+    margin: 0 auto;
+    background-color: white;
+    border: 3px solid black;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .gallery {
+        width: 200px;
+        height: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+#lagoMap {
+    width: 100%;
+    height: 400px;
+}
+
+.player-container {
+    display: flex;
+    justify-content: space-between;
+    //margin-top: 1rem;
+    flex-wrap: wrap;
+
+    .player {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+
+        img,
+        h4,
+        h5 {
+            width: 50%;
+            max-width: 150px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        img {
+            border: $darkGrey 1px solid;
+        }
+    }
+}
