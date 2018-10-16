@@ -14,7 +14,7 @@ body {
   margin: 0;
   font-family: 'Century Gothic', sans-serif;
   color: #292929;
-  background-color: #aaddff; }
+  background-color: #cdefff; }
 
 h1 {
   text-align: center;
@@ -44,7 +44,8 @@ a {
 
 .mainPic,
 .splashPic {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 10px; }
 
 .container {
   margin: 1rem; }

@@ -1,7 +1,7 @@
 $mainBlue: #1622e8;
 $mainGreen: #9feed9;
 $mainGrey: #f2f2f2;
-$hiBlue: #aaddff;
+$hiBlue: #cdefff;
 $loBlue: #0c137f;
 $darkBlue: #060940;
 $hiGreen: #aaffeb;
@@ -67,6 +67,7 @@ a {
 .mainPic,
 .splashPic {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .container {
