@@ -1,7 +1,7 @@
 $mainBlue: #1622e8;
 $mainGreen: #9feed9;
 $mainGrey: #f2f2f2;
-$hiBlue: #1825ff;
+$hiBlue: #aaddff;
 $loBlue: #0c137f;
 $darkBlue: #060940;
 $hiGreen: #aaffeb;
@@ -12,7 +12,7 @@ $darkGrey: #292929;
 
 @font-face {
     font-family: 'FixedSys';
-    src: url(fixedsys.ttf);
+    src: url(../fixedsys.ttf);
 }
 
 html {
@@ -28,30 +28,40 @@ html {
 body { 
     margin: 0;
     font-family: 'Century Gothic', sans-serif;
+    color: $darkGrey;
+    background-color: $hiBlue;
 }
 
 h1 {
     text-align: center;
     font-family: "FixedSys", "Lucida Console", "Courier";
     text-transform: uppercase;
-    font-size: 30pt;
+    font-size: 36pt;
     font-weight: 100;
+    color: $darkGrey;
 }
 
 h2 {
     font-size: 20pt;
+    color: $loBlue;
 }
 
 h3 {
     font-size: 14pt;
+    color: $loBlue;
 }
 
 h4 {
-
+    color: $loBlue;
 }
 
 p {
     font-size: 12pt;
+}
+
+a {
+    color: $darkGrey;
+    font-weight: bold;
 }
 
 .mainPic,
@@ -65,7 +75,6 @@ p {
 
 .wrapper{
     padding: 1rem;
-    max-height: 100%;
 }
 
 nav {
@@ -98,11 +107,14 @@ nav {
     position: sticky;
     bottom: 0;
     margin: 0 auto;
-    background-color: white;
-    border: 3px solid black;
+    background-color: $darkGrey;
+    // border: 3px solid black;
     width: 100%;
     text-align: center;
     padding: 10px;
+    font-size: 24pt;
+    font-family: "FixedSys", "Lucida Console", "Courier";
+    color: $hiGreen;
 }
 
 .pictures {
@@ -133,6 +145,7 @@ nav {
         display: flex;
         flex-direction: column;
         margin-top: 1rem;
+        //text-align: justify;
 
         img,
         h4,
@@ -147,4 +160,3 @@ nav {
         }
     }
 }
-// test

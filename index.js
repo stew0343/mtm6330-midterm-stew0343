@@ -1,6 +1,6 @@
-var endDate = Date.parse('oct 12 2019');
-var today = new Date();
-var difference = Math.round((endDate - today) / (24 * 60 * 60 * 1000)) + 1;
+var endDate = Date.parse('oct 12 2019 23:59:59');
+var today = Date.parse(new Date());
+var difference = Math.floor((endDate - today) / (24 * 60 * 60 * 1000));
 
 if (difference === 1) {
     document.getElementById('countdown').innerHTML = difference + ' day to go!';
