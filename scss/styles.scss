@@ -9,6 +9,7 @@ $loGreen: #557f74;
 $darkGreen: #2b403a;
 $loGrey: #7f7f7f;
 $darkGrey: #292929;
+$break: 480px;
 
 @font-face {
     font-family: 'FixedSys';
@@ -70,8 +71,17 @@ a {
     margin-bottom: 10px;
 }
 
+.mainPic {
+
+    @media all and (min-width: $break) {
+        float: left;
+        width: 300px;
+    }
+}
+
 .container {
     margin: 1rem;
+    position: relative;
 }
 
 .wrapper{
@@ -96,9 +106,26 @@ nav {
                 align-items: center;
                 text-align: center;
                 text-decoration: none;
+                
+
+                img {
+                    width:30px;
+                    padding-bottom: 5px;
+
+                    @media all and (min-width: $break) {
+                        width: auto;
+                    }
+                }
             }
             a:hover {
                 text-decoration: underline;
+            }
+        }
+
+        .current {
+            a {
+                color: $mainBlue;
+                text-decoration: underline overline;
             }
         }
     }
@@ -158,6 +185,46 @@ nav {
         }
         img {
             border: $darkGrey 1px solid;
+            box-shadow: $darkGrey 2px 2px 2px;
+            margin-bottom: 5px;
         }
     }
+}
+
+#overlay {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height:0;
+    
+    z-index: 1;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    div:last-child{
+        background-color: rgba(41, 41, 41, .8);
+        padding-bottom: 10px;
+    }
+    #image {
+        background-color: rgba(41, 41, 41, .8);
+        img {
+            width: 100%;
+            padding: 10px;
+
+            @media all and (min-width: $break) {
+                width: auto;
+                max-width: 100%;
+                max-height: 95vh;
+            }
+        }
+    }
+
+    @media all and (min-width: $break) {
+        margin: 0 auto;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
 }
