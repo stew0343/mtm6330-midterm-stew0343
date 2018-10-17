@@ -22,21 +22,11 @@ var $overlay = document.getElementById('overlay');
 
 $pictures.addEventListener('click', function(e) {
     if (e.target.classList.contains('gallery')) {
-        //showPicture()
         console.log(e.target.id);
         $image.innerHTML = `<img src="images/gallery/` + e.target.id + `.jpg">`;
-        //window.scrollTo(0,0);
-        showOverlay();
+        $overlay.classList.remove('hidden');
     }
 })
-
-function showPicture() {
-    $image.innerHTML = `<img src="images/gallery/` + `andy.png` + `">`;
-}
-
-function showOverlay() {
-    $overlay.classList.remove('hidden');
-}
 
 $image.addEventListener('click', function(e) {
     $overlay.classList.add('hidden');
