@@ -1,4 +1,4 @@
-////////////////////////////////
+/////////////////////////////////
 // COUNTDOWN
 
 var endDate = Date.parse('oct 12 2019 23:59:59');
@@ -20,14 +20,15 @@ var $pictures = document.getElementById('pictures');
 var $image = document.getElementById('image');
 var $overlay = document.getElementById('overlay');
 
+// function to open the overlay
 $pictures.addEventListener('click', function(e) {
     if (e.target.classList.contains('gallery')) {
-        console.log(e.target.id);
         $image.innerHTML = `<img src="images/gallery/` + e.target.id + `.jpg">`;
         $overlay.classList.remove('hidden');
     }
 })
 
+// function to hide the overlay
 $image.addEventListener('click', function(e) {
     $overlay.classList.add('hidden');
 })
