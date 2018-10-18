@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'FixedSys';
-  src: url(../fixedsys.ttf); }
+  src: url(../../fixedsys.ttf); }
 
 html {
   box-sizing: border-box; }
@@ -120,15 +120,6 @@ nav ul {
   font-family: "FixedSys", "Lucida Console", "Courier", sans-serif;
   color: #aaffeb; }
 
-.pictures {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  .pictures .gallery {
-    width: 200px;
-    height: 100%;
-    margin-bottom: 1rem; }
-
 #lagoMap {
   width: 100%;
   height: 400px; }
@@ -157,6 +148,15 @@ nav ul {
       .player-container .player {
         margin-top: 0;
         margin-bottom: 1rem; } }
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .pictures .gallery {
+    width: 200px;
+    height: 100%;
+    margin-bottom: 1rem; }
 
 #overlay {
   position: sticky;
